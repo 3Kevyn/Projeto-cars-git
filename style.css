@@ -1,0 +1,72 @@
+* 
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Outfit",sans-serif;
+}
+
+body
+{
+    position: relative;
+    height: 150vh;
+    background: #222327;
+    display: flex;
+}
+
+.search-box
+{
+    position: absolute;
+    left: 70%;
+    top: 2%;
+    height: 60px;
+    width: 60px;
+    background: #fff;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    transition: 0.7s;
+}
+
+.search-box .button-box, .search-box .button-close
+{
+    min-width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.search-box .button-box i
+{
+    font-size: 25px;
+}
+
+.search-box .input-busca
+{
+    position: absolute;
+    left: 60px;
+    width: calc(100% - 120px);
+    height: 100%;
+    line-height: 65px;
+}
+
+.search-box .input-busca input
+{
+    border: none;
+    outline: none;
+    font-size: 20px;
+}
+
+.search-box .button-close i
+{
+    font-size: 25px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.search-box.animacao1
+{
+    width: 350px;
+}
