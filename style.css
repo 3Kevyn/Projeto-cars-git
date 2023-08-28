@@ -17,7 +17,7 @@ body
 .search-box
 {
     position: absolute;
-    left: 70%;
+    left: 66%;
     top: 2%;
     height: 60px;
     width: 60px;
@@ -69,4 +69,176 @@ body
 .search-box.animacao1
 {
     width: 350px;
+}
+
+.navigation-menu
+{
+    position: relative;
+    top: 15px;
+    left: 85%;
+    width: 250px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation-menu .toggle
+{
+    position: relative;
+    width: 75px;
+    height: 75px;
+    background: #fff;
+    color: #222327;
+    border-radius: 50%; 
+    display: flex;
+    justify-content: center;
+    font-size: 4.5em;
+    cursor: pointer;
+    transition: 0.5s;
+
+}
+
+.navigation-menu .toggle.active
+{
+    transform: rotate(315deg);
+    box-shadow:  
+    0 0 0 68px #Fff ;
+    background: #222327 ;
+    color: #fff;
+}
+
+.navigation-menu li 
+{
+    transform: rotate(calc(360deg / 12 * var(--i)))
+    translateX(15px);
+    position: absolute;
+    list-style: none;
+    transform-origin:128px ;
+    left: 0px;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+    z-index: 10;
+}
+
+.navigation-menu.active li
+{
+    visibility: visible;
+    opacity: 1;
+}
+
+.navigation-menu li a
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 55px;
+    height: 55px;
+    font-size: 1.5em;
+    color: black;
+    transform: rotate(calc(360deg / -12 * var(--i)));
+    border-radius: 50%;
+}
+
+.navigation-menu.active li.active
+{
+    transform: rotate(calc(360deg / 12 * var(--i)))
+    translateX(1px);
+}
+
+.indicator
+{
+    position: absolute;
+    width: 100px;
+    transform-origin: right ;
+    height: 1px;
+    left: calc(50% + 2.5px);
+    background: transparent;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.indicator::before
+{
+    content: '';
+    position: absolute;
+    top: -27px;
+    left: 70px;
+    width: 55px;
+    height: 55px;
+    background: #222327;
+    box-shadow: 0 0 0 6px #29FD53;
+    border-radius: 50%;
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.navigation-menu.active .indicator::before
+{
+    opacity: 1;
+    top: -27px;
+    left: -30px;
+    background:#29FD53;
+    box-shadow: 0 0 0 6px #222327;
+}
+
+.navigation-menu li:nth-child(2).active ~ .indicator
+{
+    transform: translateX(-98px) rotate(0deg);
+}
+
+.navigation-menu li:nth-child(3).active ~ .indicator
+{
+    transform: translateX(-98px) rotate(30deg);
+} 
+
+.navigation-menu li:nth-child(4).active ~ .indicator
+{
+    transform: translateX(-98px) rotate(59deg);
+}
+
+.navigation-menu li:nth-child(5).active ~ .indicator
+{
+    transform: translateX(-98px) rotate(88deg);
+}
+
+.navigation-menu li:nth-child(6).active ~ .indicator
+{
+    transform: translateX(-98px) rotate(118deg);
+}
+
+.navigation-menu li:nth-child(7).active ~ .indicator
+{
+    transform: translateX(-98px) rotate(148deg);
+}
+
+.navigation-menu li:nth-child(8).active ~ .indicator
+{
+    transform: translateX(-98px) rotate(180deg);
+}
+
+.navigation-menu li:nth-child(9).active ~ .indicator
+{
+    transform: translateX(-98px) rotate(212deg);
+}
+
+.navigation-menu li:nth-child(10).active ~ .indicator
+{
+    transform: translateX(-98px) rotate(242deg);
+}
+
+.navigation-menu li:nth-child(11).active ~ .indicator
+{
+    transform: translateX(-98px) rotate(271deg);
+}
+
+.navigation-menu li:nth-child(12).active ~ .indicator
+{
+    transform: translateX(-98px) rotate(300deg);
+}
+
+.navigation-menu li:nth-child(13).active ~ .indicator
+{
+    transform: translateX(-98px) rotate(330deg);
 }
