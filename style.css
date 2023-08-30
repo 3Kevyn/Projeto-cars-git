@@ -1,50 +1,77 @@
-* 
-{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Outfit",sans-serif;
+    font-family: "Outfit", sans-serif;
 }
 
-body
-{
+body {
     position: relative;
     height: 150vh;
-    background: #222327;
+    background-image: url(https://a.d-cd.net/3UAAAgEB1uA-1920.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     display: flex;
+
 }
 
-.search-box
+.logomark-KN {
+    padding: 0;
+    max-width: 100px;
+    max-height: 100px;
+    margin-top: 15px;
+    left: 5px;
+    display: flex;
+    position: absolute;
+}
+
+.hidee
 {
+    display: none;
+}
+
+.search-box {
     position: absolute;
     left: 66%;
     top: 2%;
     height: 60px;
     width: 60px;
-    background: #fff;
+    background-color: #222327;
+    border-radius: 40px;
     overflow: hidden;
     display: flex;
     justify-content: space-between;
     transition: 0.7s;
 }
 
-.search-box .button-box, .search-box .button-close
+.Nome-apresentacao
 {
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 45px;
+    border: hidden;
+    margin: 12px;
+    left: 130px;
+    position: absolute;
+}
+
+.search-box .button-box,
+.search-box .button-close {
     min-width: 60px;
     height: 60px;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    color: #Fff;
 }
 
-.search-box .button-box i
-{
+.search-box .button-box i {
     font-size: 25px;
 }
 
-.search-box .input-busca
-{
+.search-box .input-busca {
     position: absolute;
     left: 60px;
     width: calc(100% - 120px);
@@ -52,27 +79,24 @@ body
     line-height: 65px;
 }
 
-.search-box .input-busca input
-{
+.search-box .input-busca input {
     border: none;
     outline: none;
     font-size: 20px;
+    background-color: #222327;
 }
 
-.search-box .button-close i
-{
+.search-box .button-close i {
     font-size: 25px;
     cursor: pointer;
     margin-left: 10px;
 }
 
-.search-box.animacao1
-{
+.search-box.animacao1 {
     width: 350px;
 }
 
-.navigation-menu
-{
+.navigation-menu {
     position: relative;
     top: 15px;
     left: 85%;
@@ -83,14 +107,13 @@ body
     align-items: center;
 }
 
-.navigation-menu .toggle
-{
+.navigation-menu .toggle {
     position: relative;
     width: 75px;
     height: 75px;
-    background: #fff;
-    color: #222327;
-    border-radius: 50%; 
+    background: #222327;
+    color: #fff;
+    border-radius: 50%;
     display: flex;
     justify-content: center;
     font-size: 4.5em;
@@ -99,22 +122,19 @@ body
 
 }
 
-.navigation-menu .toggle.active
-{
+.navigation-menu .toggle.active {
     transform: rotate(315deg);
-    box-shadow:  
-    0 0 0 68px #Fff ;
-    background: #222327 ;
+    box-shadow:
+        0 0 0 68px #fff;
+    background: #222327;
     color: #fff;
 }
 
-.navigation-menu li 
-{
-    transform: rotate(calc(360deg / 12 * var(--i)))
-    translateX(15px);
+.navigation-menu li {
+    transform: rotate(calc(360deg / 12 * var(--i))) translateX(15px);
     position: absolute;
     list-style: none;
-    transform-origin:128px ;
+    transform-origin: 128px;
     left: 0px;
     visibility: hidden;
     opacity: 0;
@@ -122,14 +142,12 @@ body
     z-index: 10;
 }
 
-.navigation-menu.active li
-{
+.navigation-menu.active li {
     visibility: visible;
     opacity: 1;
 }
 
-.navigation-menu li a
-{
+.navigation-menu li a {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -141,17 +159,14 @@ body
     border-radius: 50%;
 }
 
-.navigation-menu.active li.active
-{
-    transform: rotate(calc(360deg / 12 * var(--i)))
-    translateX(1px);
+.navigation-menu.active li.active {
+    transform: rotate(calc(360deg / 12 * var(--i))) translateX(1px);
 }
 
-.indicator
-{
+.indicator {
     position: absolute;
     width: 100px;
-    transform-origin: right ;
+    transform-origin: right;
     height: 1px;
     left: calc(50% + 2.5px);
     background: transparent;
@@ -159,8 +174,7 @@ body
     transition: 0.5s;
 }
 
-.indicator::before
-{
+.indicator::before {
     content: '';
     position: absolute;
     top: -27px;
@@ -174,71 +188,85 @@ body
     opacity: 0;
 }
 
-.navigation-menu.active .indicator::before
-{
+.navigation-menu.active .indicator::before {
     opacity: 1;
     top: -27px;
     left: -30px;
-    background:#29FD53;
+    background: #29FD53;
     box-shadow: 0 0 0 6px #222327;
 }
 
-.navigation-menu li:nth-child(2).active ~ .indicator
-{
+.navigation-menu li:nth-child(2).active~.indicator {
     transform: translateX(-98px) rotate(0deg);
 }
 
-.navigation-menu li:nth-child(3).active ~ .indicator
-{
+.navigation-menu li:nth-child(3).active~.indicator {
     transform: translateX(-98px) rotate(30deg);
-} 
+}
 
-.navigation-menu li:nth-child(4).active ~ .indicator
-{
+.navigation-menu li:nth-child(4).active~.indicator {
     transform: translateX(-98px) rotate(59deg);
 }
 
-.navigation-menu li:nth-child(5).active ~ .indicator
-{
+.navigation-menu li:nth-child(5).active~.indicator {
     transform: translateX(-98px) rotate(88deg);
 }
 
-.navigation-menu li:nth-child(6).active ~ .indicator
-{
+.navigation-menu li:nth-child(6).active~.indicator {
     transform: translateX(-98px) rotate(118deg);
 }
 
-.navigation-menu li:nth-child(7).active ~ .indicator
-{
+.navigation-menu li:nth-child(7).active~.indicator {
     transform: translateX(-98px) rotate(148deg);
 }
 
-.navigation-menu li:nth-child(8).active ~ .indicator
-{
+.navigation-menu li:nth-child(8).active~.indicator {
     transform: translateX(-98px) rotate(180deg);
 }
 
-.navigation-menu li:nth-child(9).active ~ .indicator
-{
+.navigation-menu li:nth-child(9).active~.indicator {
     transform: translateX(-98px) rotate(212deg);
 }
 
-.navigation-menu li:nth-child(10).active ~ .indicator
-{
+.navigation-menu li:nth-child(10).active~.indicator {
     transform: translateX(-98px) rotate(242deg);
 }
 
-.navigation-menu li:nth-child(11).active ~ .indicator
-{
+.navigation-menu li:nth-child(11).active~.indicator {
     transform: translateX(-98px) rotate(271deg);
 }
 
-.navigation-menu li:nth-child(12).active ~ .indicator
-{
+.navigation-menu li:nth-child(12).active~.indicator {
     transform: translateX(-98px) rotate(300deg);
 }
 
-.navigation-menu li:nth-child(13).active ~ .indicator
-{
+.navigation-menu li:nth-child(13).active~.indicator {
     transform: translateX(-98px) rotate(330deg);
+}
+
+#Carros-Modelos {
+    display: flex;
+    position: absolute;
+    top: 40%;
+    grid-template-columns: 4;
+    border-radius: 5px;
+}
+
+
+@media screen and (max-width: 720px) {
+    img {
+        max-width: 100%;
+        object-fit: contain;
+        height: 10em;
+    }
+
+    .Carro-2023 {
+        max-width: 10em;
+        margin-top: 1em;
+    }
+
+    #Carros-Modelos {
+        grid-template-columns: auto auto;
+        -ms-grid-column-gap: 1em;
+    }
 }

@@ -14,8 +14,8 @@
         <div class="button-box">
             <i class="bi bi-search"></i>
         </div>
-        <div class="input-busca">
-            <input type="text" name="" id="" placeholder="O Quê Procura?">
+        <div class="input-busca" >
+            <input onkeyup="Filtrar()" type="text" name="" id="inputBusca" placeholder="O Quê Procura?">
         </div>
         <div class="button-close">
             <i class="bi bi-x-circle"></i>
@@ -25,25 +25,207 @@
         <div class="toggle">
             <i class="bi bi-plus"></i>
         </div>
-        <li style="--i:0;" name="Logo" class="active"><a href="#"><img src="./logos/LogoVolkswagen.png" width="30" alt=""></a></li>
-        <li style="--i:1;" name="Logo"><a href="#"><img src="./logos/LogoChevrolet.png" width="30" alt=""></a></li>
-        <li style="--i:2;" name="Logo"><a href="#"><img src="./logos/LogoFiat.png" width="30" alt=""></a></li>
-        <li style="--i:3;" name="Logo"><a href="#"><img src="./logos/LogoFord.png" width="30" alt=""></a></li>
-        <li style="--i:4;" name="Logo"><a href="#"><img src="./logos/LogoHonda.png" width="30" alt=""></a></li>
-        <li style="--i:5;" name="Logo"><a href="#"><img src="./logos/LogoHyundai.png" width="30" alt=""></a></li>
-        <li style="--i:6;" name="Logo"><a href="#"><img src="./logos/LogoJeep.png" width="30" alt=""></a></li>
-        <li style="--i:7;" name="Logo"><a href="#"><img src="./logos/LogoNissan.png" width="30" alt=""></a></li>
-        <li style="--i:8;" name="Logo"><a href="#"><img src="./logos/LogoRenault.png" width="30" alt=""></a></li>
-        <li style="--i:9;" name="Logo"><a href="#"><img src="./logos/LogoToyota.png" width="30" alt=""></a></li>
-        <li style="--i:10;" name="Logo"><a href="#"><img src="./logos/LogoLexus.png" width="30" alt=""></a></li>
-        <li style="--i:11;" name="Logo"><a href="#"><img src="./logos/LogoVolvo.png" width="30" alt=""></a></li>
-        
-        <div class="indicator">
-            
-        </div>
+        <li style="--i:0;"  name="Logo" class="active"><a href="#"><img src="./logos/LogoVolkswagen.png" width="30"alt=""></a></li>
+        <li style="--i:1;"  name="Logo"><a href="#"><img src="./logos/LogoChevrolet.png" width="30" alt=""></a></li>
+        <li style="--i:2;"  name="Logo"><a href="#"><img src="./logos/LogoFiat.png" width="30" alt=""></a></li>
+        <li style="--i:3;"  name="Logo"><a href="#"><img src="./logos/LogoFord.png" width="30" alt=""></a></li>
+        <li style="--i:4;"  name="Logo"><a href="#"><img src="./logos/LogoHonda.png" width="30" alt=""></a></li>
+        <li style="--i:5;"  name="Logo"><a href="#"><img src="./logos/LogoHyundai.png" width="30" alt=""></a></li>
+        <li style="--i:6;"  name="Logo"><a href="#"><img src="./logos/LogoJeep.png" width="30" alt=""></a></li>
+        <li style="--i:7;"  name="Logo"><a href="#"><img src="./logos/LogoNissan.png" width="30" alt=""></a></li>
+        <li style="--i:8;"  name="Logo"><a href="#"><img src="./logos/LogoRenault.png" width="30" alt=""></a></li>
+        <li style="--i:9;"  name="Logo"><a href="#"><img src="./logos/LogoToyota.png" width="30" alt=""></a></li>
+        <li style="--i:10;"  name="Logo"><a href="#"><img src="./logos/LogoLexus.png" width="30" alt=""></a></li>
+        <li style="--i:11;"  name="Logo"><a href="#"><img src="./logos/LogoVolvo.png" width="30" alt=""></a></li>
+        <div class="indicator"></div>
+    </ul>
+    <img class="logomark-KN" src="./img/logos-background/logokv.png" alt="\Logo">
+    <main>
+        <h1 class="Nome-apresentacao">Kevyn devs</h1>
+    </main>
+    
+    <ul id="Carros-Modelos">
+        <ul data-name="Carro-2023" class="Carros-vw">
+            <li class="carros-vw-2023" id="Amarok" data-name="Volkswagen">
+                <a href="#">
+                    <img width="80" src="./img/Volkswagen/2023/Amarok-icon.png">
+                    <span class="Name-Mark">Volkswagen - Amarok</span>
+                </a>
+            </li>
+           <!-- <li class="carros-vw-2023" id="Fox" data-name="Fox">
+                <a href="#">
+                    <img width="80" src="./img/Volkswagen/2023/Fox-icon.jpg">
+                </a>
+            </li>
+            <li class="carros-vw-2023" id="Gol" data-name="Gol">
+                <a href="#">
+                    <img width="80" src="./img/Volkswagen/2023/Gol-icon.png">
+                </a>
+            </li>
+            <li class="carros-vw-2023" id="ID.4" data-name="ID.4">
+                <a href="#">
+                    <img width="80" src="./img/Volkswagen/2023/ID.4-icon.jpg">
+                </a>
+            </li>
+            <li class="carros-vw-2023" id="Jetta" data-name="Jetta">
+                <a href="#">
+                    <img width="80" src="./img/Volkswagen/2023/Jetta-icon.jpg">
+                </a>
+            </li>
+            <li class="carros-vw-2023" id="Nivus" data-name="Nivus">
+                <a href="#">
+                    <img width="80" src="./img/Volkswagen/2023/Nivus-icon.png">
+                </a>
+            </li>
+            <li class="carros-vw-2023" id="Polo" data-name="Polo">
+                <a href="#">
+                    <img width="80" src="./img/Volkswagen/2023/Polo-icon.jpg">
+                </a>
+            </li>
+            <li class="carros-vw-2023" id="Saveiro" data-name="Saveiro">
+                <a href="#">
+                    <img width="80" src="./img/Volkswagen/2023/Saveiro-icon.png">
+                </a>
+            </li>
+            <li class="carros-vw-2023" id="T-Cross" data-name="T-Cross">
+                <a href="#">
+                    <img width="80" src="./img/Volkswagen/2023/T-Cross-icon.jpg">
+                </a>
+            </li>
+            <li class="carros-vw-2023" id="Tiguan" data-name="Tiguan">
+                <a href="#">
+                    <img width="80" src="./img/Volkswagen/2023/Tiguan-icon.png">
+                </a>
+            </li>
+            <li class="carros-vw-2023" id="Voyage" data-name="Voyage">
+                <a href="#">
+                    <img width="80" src="./img/Volkswagen/2023/Voyage-icon.jpg">
+                </a>
+            </li>-->
+        </ul>
+        <ul data-name="Carro-2023" class="Carros-Toyota">
+            <!--
+            <li class="carros-TyT-2023" id="Yaris" data-name="Yaris">
+                <a href="#">
+                    <img width="80">
+                </a>
+            </li>
+            <li class="carros-TyT-2023" id="Corolla-Cross" data-name="Corolla-Cross">
+                <a href="#">
+                    <img width="80">
+                </a>
+            </li>
+            <li class="carros-TyT-2023" id="Corolla-Sedan" data-name="Corolla-Sedan">
+                <a href="#">
+                    <img width="80">
+                </a>
+            </li>-->
+            <li class="carros-TyT-2023" id="Hilux" data-name="Hilux">
+                <a href="#">
+                    <img src="./img/Toyota/2023/Hilux-icon.png" width="80">
+                    <span class="Name-Mark">Toyota - Hilux</span>
+                </a>
+            </li>
+            <!--<li class="carros-TyT-2023" id="SW4" data-name="SW4">
+                <a href="#">
+                    <img width="80">
+                </a>
+            </li>
+            <li class="carros-TyT-2023" id="Camry" data-name="Camry">
+                <a href="#">
+                    <img width="80">
+                </a>
+            </li>
+            <li class="carros-TyT-2023" id="RAV4" data-name="RAV4">
+                <a href="#">
+                    <img width="80">
+                </a>
+            </li>-->
+        </ul>
+        <ul data-name="Carro-2023" class="Carros-Chevrolet">
+            <li class="Carros-Chevrolet-2023" id="Equinox" data-name="Equinox">
+                <a href="#">
+                    <img src="./img/Chevrolet/2023/Equinox-icon.png" width="80">
+                    <span class="Name-Mark">Chevrolet - Equinox</span>
+                </a>
+            </li>
+        </ul>
+        <ul data-name="Carro-2023" class="Carros-Fiat">
+            <li class="Carros-Fiat-2023" id="Fastback" data-name="Fastback">
+                <a href="#">
+                    <img src="./img/Fiat/2023/Fastback-icon.png" width="80">
+                    <span class="Name-Mark">Fiat - Fastback</span>
+                </a>
+            </li>
+        </ul>
+        <ul data-name="Carro-2023" class="Carros-Ford">
+            <li class="Carros-Ford-2023" id="Ranger" data-name="Ranger">
+                <a href="#">
+                    <img src="./img/Ford/2023/Ranger-icon.jpg" width="80">
+                    <span class="Name-Mark">Ford - Ranger</span>
+                </a>
+            </li>
+        </ul>
+        <ul data-name="Carro-2023" class="Carros-Honda">
+            <li class="Carros-City-2023" id="City" data-name="City">
+                <a href="#">
+                    <img src="./img/Honda/2023/City-icon.png" width="80">
+                    <span class="Name-Mark">Honda - City</span>
+                </a>
+            </li>
+        </ul>
+        <ul data-name="Carro-2023" class="Carros-Hyundai">
+            <li class="Carros-PALISADE-2023" id="PALISADE" data-name="PALISADE">
+                <a href="#">
+                    <img src="./img/Hyundai/2023/palisade-icon.png" width="80">
+                    <span class="Name-Mark">Hyundai - PARALISADE</span>
+                </a>
+            </li>
+        </ul>
+        <ul data-name="Carro-2023" class="Carros-Jeep">
+            <li class="Carros-Renegade-2023" id="Renegade" data-name="Renegade">
+                <a href="#">
+                    <img src="./img/Jeep/2023/renegade-icon.png" width="80">
+                    <span class="Name-Mark">Jeep - Renegade</span>
+                </a>
+            </li>
+        </ul>
+        <ul data-name="Carro-2023" class="Carros-Nissan">
+            <li class="Carros-Frontier-2023" id="Frontier" data-name="Frontier">
+                <a href="#">
+                    <img src="./img/Nissan/2023/frontier-icon.jpg" width="80">
+                    <span class="Name-Mark">Nissan - Frontier</span>
+                </a>
+            </li>
+        </ul>
+        <ul data-name="Carro-2023" class="Carros-Renault">
+            <li class="Carros-Kwid-2023" id="Kwid" data-name="Kwid">
+                <a href="#">
+                    <img src="./img/Renault/2023/kwid-icon.png" width="80">
+                    <span class="Name-Mark">Renault - Kwid</span>
+                </a>
+            </li>
+        </ul>
+        <ul data-name="Carro-2023" class="Carros-Lexus">
+            <li class="Carros-LS-2023" id="LS" data-name="LS">
+                <a href="#">
+                    <img src="./img/Lexus/2023/LS-icon.png" width="80">
+                    <span class="Name-Mark">Lexus - LS</span>
+                </a>
+            </li>
+        </ul>
+        <ul data-name="Carro-2023" class="Carros-Volvo">
+            <li class="Carros-XC60-2023" id="XC60" data-name="XC60">
+                <a href="#">
+                    <img src="./img/Volvo/2023/XC60-icon.png" width="80">
+                    <span class="Name-Mark">Volvo - XC60</span>
+                </a>
+            </li>
+        </ul>
     </ul>
     <script src="./menu-navegation.js"></script>
     <script src="./input-busca.js"></script>
+    <script src="./filter.js"></script>
 </body>
 
 </html>
