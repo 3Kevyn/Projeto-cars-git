@@ -14,7 +14,7 @@ function Filtrar() {
 
     for(i=0;i<MyLi.length;i++)
     {
-        a = MyLi[i].getElementsByTagName("a")[0];
+        a = MyLi[i].getElementsByClassName("Name-Mark")[0];
         txtValue = a.textContent || a.innerText;
         if(txtValue.toLocaleUpperCase().indexOf(filter) > -1 )
         {

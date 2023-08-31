@@ -7,20 +7,35 @@
 
 body {
     position: relative;
-    height: 150vh;
-    background-image: url(https://a.d-cd.net/3UAAAgEB1uA-1920.jpg);
+    background: linear-gradient(65deg,whitesmoke,#297858);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     display: flex;
+}
 
+main
+{
+    width: 90%;
+    margin: 60px auto;
+}
+
+header
+{
+    width: 100%;
+    height: 100px;
+    border-bottom: 2px solid #e5e5e5;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
 }
 
 .logomark-KN {
     padding: 0;
+    top: 10px;
     max-width: 100px;
     max-height: 100px;
-    margin-top: 15px;
+    margin-top: 1px;
     left: 5px;
     display: flex;
     position: absolute;
@@ -97,7 +112,7 @@ body {
 }
 
 .navigation-menu {
-    position: relative;
+    position: absolute;
     top: 15px;
     left: 85%;
     width: 250px;
@@ -136,6 +151,7 @@ body {
     list-style: none;
     transform-origin: 128px;
     left: 0px;
+    top: 100px;
     visibility: hidden;
     opacity: 0;
     transition: 0.5s;
@@ -178,7 +194,7 @@ body {
     content: '';
     position: absolute;
     top: -27px;
-    left: 70px;
+    left: -30px;
     width: 55px;
     height: 55px;
     background: #222327;
@@ -188,19 +204,13 @@ body {
     opacity: 0;
 }
 
-.navigation-menu.active .indicator::before {
-    opacity: 1;
-    top: -27px;
-    left: -30px;
-    background: #29FD53;
-    box-shadow: 0 0 0 6px #222327;
-}
 
-.navigation-menu li:nth-child(2).active~.indicator {
+
+.navigation-menu  li:nth-child(1).active~.indicator {
     transform: translateX(-98px) rotate(0deg);
 }
 
-.navigation-menu li:nth-child(3).active~.indicator {
+.navigation-menu  li:nth-child(3).active~.indicator {
     transform: translateX(-98px) rotate(30deg);
 }
 
@@ -244,15 +254,6 @@ body {
     transform: translateX(-98px) rotate(330deg);
 }
 
-#Carros-Modelos {
-    display: flex;
-    position: absolute;
-    top: 40%;
-    grid-template-columns: 4;
-    border-radius: 5px;
-}
-
-
 @media screen and (max-width: 720px) {
     img {
         max-width: 100%;
@@ -269,4 +270,60 @@ body {
         grid-template-columns: auto auto;
         -ms-grid-column-gap: 1em;
     }
+}
+
+
+.Tds-Carros
+{
+    padding: 40px 20px;
+}
+
+.Tds-Carros ul 
+{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Tds-Carros ul li
+{
+    list-style: none;
+    width: 23.4%;
+    height: 400px;
+    transition: 0.5 all;
+    background: whitesmoke;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 200px 10px 0 10px;
+    position: relative;
+}
+
+picture img 
+{
+    width: 95%;
+    z-index: 1;
+    padding: 20px 0 0 0 ;
+}
+.details>strong
+{
+    display: inherit;
+    margin: 20px;
+    font-size: 30px;
+    letter-spacing: 2px;
+    color:#555 ;
+}
+.details>span
+{
+    display: inherit;
+    padding: 0 20px;
+    width: 80%;
+}
+li h3
+{
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    font-size: 30px;
+    color: #555;
+    text-shadow: 1px 1px 2px black;
 }
